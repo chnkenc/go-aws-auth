@@ -45,7 +45,7 @@ func serviceAndRegion(host string) (service string, region string) {
 			service = parts[0]
 			region = parts[1]
 		}
-	} else if len(parts) == 5 {
+	} else if len(parts) == 5 || len(parts) == 6 {
 		service = parts[2]
 		region = parts[1]
 	} else {
